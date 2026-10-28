@@ -1,0 +1,88 @@
+{
+  "kind": "new_paired_preprocessing_intervention_on_real_whitebox_activations",
+  "source_job": "f2260c0d9ed842d6",
+  "source_hashes": {
+    "Qwen_Qwen3.5-4B": "5855412bf00045f6c4e3ccd66b0a6eea5d86ce5df8e734019517b451ad3ecbc5",
+    "deepseek-ai_DeepSeek-R1-0528-Qwen3-8B": "5d4fea019eabc462d43df5212e59937b73dff7dc63c87b23c304fe9b73eaaf48",
+    "allenai_Olmo-3-7B-Think": "7a29f22cf75591b2ce44967efff8bf466a2003fce0cf01ed644055592ff58d7c",
+    "Skywork_Skywork-OR1-Math-7B": "c8f0dba84c2e941022e5b3cf5495eb869e292a75d2a55916bf7fb65854ef2c9d"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "folds": 5,
+  "rows_per_seed": {
+    "0": 97,
+    "1": 97,
+    "2": 97
+  },
+  "metrics": [
+    {
+      "seed": 0,
+      "mode": "all_data",
+      "auroc": 0.8069264069264069,
+      "accuracy": 0.7216494845360825,
+      "balanced_accuracy": 0.732034632034632
+    },
+    {
+      "seed": 0,
+      "mode": "train_only",
+      "auroc": 0.8064935064935065,
+      "accuracy": 0.7216494845360825,
+      "balanced_accuracy": 0.732034632034632
+    },
+    {
+      "seed": 1,
+      "mode": "all_data",
+      "auroc": 0.8489177489177488,
+      "accuracy": 0.7422680412371134,
+      "balanced_accuracy": 0.7474025974025974
+    },
+    {
+      "seed": 1,
+      "mode": "train_only",
+      "auroc": 0.8489177489177488,
+      "accuracy": 0.7422680412371134,
+      "balanced_accuracy": 0.7474025974025974
+    },
+    {
+      "seed": 2,
+      "mode": "all_data",
+      "auroc": 0.8406926406926407,
+      "accuracy": 0.7628865979381443,
+      "balanced_accuracy": 0.7712121212121212
+    },
+    {
+      "seed": 2,
+      "mode": "train_only",
+      "auroc": 0.8406926406926407,
+      "accuracy": 0.7628865979381443,
+      "balanced_accuracy": 0.7712121212121212
+    }
+  ],
+  "mean_metrics": {
+    "all_data": {
+      "auroc": 0.8321789321789321,
+      "accuracy": 0.7422680412371134,
+      "balanced_accuracy": 0.7502164502164502
+    },
+    "train_only": {
+      "auroc": 0.832034632034632,
+      "accuracy": 0.7422680412371134,
+      "balanced_accuracy": 0.7502164502164502
+    }
+  },
+  "delta_auroc_on_mean_predictions": 0.0,
+  "paired_problem_ci95": [
+    0.0,
+    0.0
+  ],
+  "caveats": [
+    "Exploratory; known public labels and selected ensemble.",
+    "Randomized PCA fixed in both arms; not an exact reproduction of sklearn auto full-PCA original.",
+    "No new GPU inference; measures preprocessing effect, not general causal circuit interpretation."
+  ],
+  "generated_utc": "2026-10-28T09:27:39.352021+00:00"
+}
