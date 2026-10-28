@@ -3,6 +3,21 @@
 White-box residual-stream probes for the [AIMO Interpretability Challenge](https://aimo-interp.github.io/), Small Models Track.
 One prompt-only forward pass per problem, three complementary linear probes, and plain-NumPy exported weights.
 
+> **Current official entry:** the final corrected study and exact S2 bundle are
+> maintained in [aimo-interp-residual-robustness-probes](https://github.com/Agnuxo1/aimo-interp-residual-robustness-probes).
+> Archived official receipt **1015694** is Finished, accuracy **0.5714285714**
+> on14public cases, coverage1.0 and invalid0. This repository preserves earlier
+> supplementary implementation experiments. Its historical figures below
+> predate a further CRLF/LF duplicate-group correction and are not the final
+> leakage-corrected estimates. Do not select a new submission from them.
+
+The corrected study retains positive signal (grouped AUROC0.812; nested
+AUROC0.805), with a problem-bootstrap advantage over the surface control
++0.052 [0.002,0.104]. It also preserves non-significant contrasts with TF-IDF
+and embeddings, and the negative causal-ablation result. The OpenReview report
+is prepared; its submission receipt remains unverified. No duplicate Codabench
+submission is created by this update.
+
 ![Pipeline](figures/pipeline.gif)
 
 ## Applied improvement: training-only band normalization
