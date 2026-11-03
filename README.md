@@ -1,3 +1,8 @@
+<!-- Research illustration: conceptual pipeline, not measured results. -->
+![Animated conceptual scientific workflow](assets/hero-workflow.gif)
+
+*Conceptual scientific pipeline (not experimental footage).* [Accessible vector architecture](assets/architecture.svg).
+
 # Reading Robustness Before Reasoning
 
 White-box residual-stream probes for the [AIMO Interpretability Challenge](https://aimo-interp.github.io/), Small Models Track.
