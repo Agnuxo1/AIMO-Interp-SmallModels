@@ -90,3 +90,11 @@ GPU extraction uses the official runtime-compatible environment; CPU reanalysis 
 97 own-model rows are unevenly distributed (Qwen12, DeepSeek64, OLMo9, Skywork12); 54 DeepSeek rows are MATH rather than olympiad-level. Proxy labels, configuration selection and known public labels limit generalization. No fresh hidden-test claim is made. An OpenReview paper receipt remains unverified.
 
 Code: Apache-2.0. Author: Francisco Angulo de Lafuente. Models: Qwen, DeepSeek, Ai2 OLMo and Skywork. Official sources: [competition](https://aimo-interp.github.io/), [getting started](https://github.com/aimo-interp/getting-started), [baselines](https://github.com/aimo-interp/baselines). Prior work: [Discovering Latent Knowledge in Language Models Without Supervision](https://arxiv.org/abs/2212.03827); the present probes use labelled data and do not claim that method's unsupervised setting.
+
+## Research authorship and citation
+
+**Original research author:** Francisco Angulo de Lafuente. **ORCID:** [https://orcid.org/0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063). **Attribution documentation updated:** 2026-11-03. **Software license:** [Apache-2.0](LICENSE), subject to applicable third-party licenses.
+
+Copyright (c) 2026 Francisco Angulo de Lafuente for original contributions. Please preserve the original copyright and license notices and cite the original research authors when using this research. Do not misrepresent the authorship of the work or of its underlying methods. The existing Apache-2.0 license and applicable attribution/NOTICE obligations remain in force. Scholarly citation is requested separately; the repository is not relicensed to MIT.
+
+See [research authors](AUTHORS.md), [citation metadata](CITATION.cff), [license](LICENSE), [copyright notes](NOTICE.md), [software metadata](codemeta.json) and [machine-readable provenance](provenance/identity.jsonld). The animated workflow and architecture SVG above are **conceptual illustrations**, not observed experiments. Experimental claims must be supported separately by the documented data and validation.
