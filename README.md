@@ -25,6 +25,10 @@ submission is created by this update.
 
 ![Pipeline](figures/pipeline.gif)
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Cached model activations let researchers compare lightweight robustness probes and text controls on CPU without repeating expensive feature extraction. Training-only normalisation improves validation discipline by preventing held-out rows from influencing the fitted transform. This <a href="#applied-improvement-training-only-band-normalization">documented correction</a> preserves the observed signal in its paired experiment; the repository remains supplementary research, with the final leakage-corrected study maintained in the linked successor.</sub>
+<!-- impact-note:end -->
+
 ## Applied improvement: training-only band normalization
 
 The CV and ensemble implementations now fit the layer-band normalization **inside each training fold**. Validation rows cannot alter the fitted transform. The final submission exporter already saves normalization statistics fitted on the labelled training corpus; its inference path was correct and is retained.
